@@ -1,0 +1,16 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: rgb(248, 216, 169);
+}
+
+
+img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+h1 {
+    color:  rgb(64, 13, 112);
+}
