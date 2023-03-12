@@ -14,3 +14,85 @@ img {
 h1 {
     color:  rgb(64, 13, 112);
 }
+
+/* CSSBayan */
+
+.CSSBayan {
+    width: 80%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.CSSBayan:hover {
+    color:   rgb(64, 13, 112);
+}
+
+.CSSBayan_H {
+    display: block;
+    padding: 3%;
+    cursor: pointer;  
+}
+
+.CSSBayan_icon {
+    display: none;
+    width: 4%;
+    height: auto;
+    text-align: right;
+}
+
+.CSSBayan_items {
+    border-top: 1px solid rgb(64, 13, 112);
+    margin-bottom: 3%;
+}
+
+.CSSBayan_inputs {
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.CSSBayan_imgs {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+    text-align: center;
+    opacity: 0;
+}
+
+.CSSBayan_items:hover .CSSBayan_imgs {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: 1s;
+}
+
+.CSSBayan:hover .CSSBayan_icon {
+    display: block;
+}
+
+.CSSBayan_items:hover .CSSBayan_icon {
+    transform: rotate(90deg);
+}
+
+.CSSBayan_inputs:checked ~ .CSSBayan_imgs {
+    display: block;
+}
+
+.CSSBayan_inputs:checked ~ .CSSBayan_icon {
+    display: block;
+    transform: rotate(90deg);
+}
+
+.CSSBayan_inputs:checked ~ .CSSBayan_H {
+    color:  rgb(217, 54, 106);
+}
+
+.CSSBayan_items:active {
+    opacity: 0.7;
+    color: black;
+}
+
+*:active {
+    cursor: grab;
+}
